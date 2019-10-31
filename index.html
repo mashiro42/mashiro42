@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif , "微軟正黑體"}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("http://cupcake.nilssonlee.se/wp-content/uploads/2017/08/IMG_0741-1200x800.jpg");
+  min-height: 89%;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">jewel</a>
+    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#googleMap" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Open from 7am to 4pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">ruby<br>Strawberry</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>ruby<br>Strawberry</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Let me see the jewel</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE jewel</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">jewel</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">cookies</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">cake</div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Ruby</b> <span class="w3-right w3-tag w3-dark-grey w3-round">NT.700</span></h1>
+      <p class="w3-text-grey">草莓</p>
+      <hr>
+   
+      <h1><b>Agate</b> <span class="w3-right w3-tag w3-dark-grey w3-round">NT.300</span></h1>
+      <p class="w3-text-grey">小番茄</p>
+      <hr>
+      
+      <h1><b>Aguamarine</b> <span class="w3-right w3-tag w3-dark-grey w3-round">NT.300</span></h1>
+      <p class="w3-text-grey">葡萄</p>
+      <hr>
+
+      <h1><b>Ccitrine</b> <span class="w3-right w3-tag w3-dark-grey w3-round">NT.100</span></h1>
+      <p class="w3-text-grey">香蕉</p>
+      <hr>
+
+      <h1><b>pearl</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">NT.500</span></h1>
+      <p class="w3-text-grey">荔枝</p>
+      <hr>
+
+      <h1><b>peridot</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">NT.90</span></h1>
+      <p class="w3-text-grey">奇異果</p>
+    </div>
+
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>布朗尼</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">NT.150</span></h1>
+      <p class="w3-text-grey">巧克力與堅果仁</p>
+      <hr>
+   
+      <h1><b>馬卡龍</b> <span class="w3-right w3-tag w3-dark-grey w3-round">NT.350</span></h1>
+      <p class="w3-text-grey">草莓,香蕉,奇異果</p>
+      <hr>
+      
+      <h1><b>水果乾</b> <span class="w3-right w3-tag w3-dark-grey w3-round">NT.50</span></h1>
+      <p class="w3-text-grey">祖傳烘製手法，外焦內軟</p>
+      <hr>
+
+      <h1><b>手工餅乾</b> <span class="w3-right w3-tag w3-dark-grey w3-round">NT.50</span></h1>
+      <p class="w3-text-grey">牛奶的饗宴</p>
+    </div>
+
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>水果塔</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">NT.350</span></h1>
+      <p class="w3-text-grey">任選三種水果加上牛奶麵皮烤製</p>
+      <hr>
+   
+      <h1><b>水果奶酪蛋糕捲</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h1>
+      <p class="w3-text-grey">任選一種水果</p>
+      <hr>
+      
+      <h1><b>水果乾吐司</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span></h1>
+      <p class="w3-text-grey">全麥香加上水果的甜味</p>
+      <hr>
+      
+      <h1><b>水果果凍</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+      <p class="w3-text-grey">一至兩種水果混搭</p>
+    </div><br>
+
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+    <p>產地直送，不噴農藥</p>
+    <p><strong>產地</strong> 台灣</p>
+    <p>熱帶水果王國</p>
+    <h1><b>Opening Hours</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>星期三公休</p>
+        <p>星期日-星期二AM9-PM9</p>
+        <p>星期四-星期六AM8-PM8</p>
+      </div>
+    
+    </div>
+    
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;">
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+    <p>您可以撥打我們的電話 02-22665599</p>
+    <p><span class="w3-tag">FYI!</span> 或傳與我們訊息</p>
+    <p class="w3-xxlarge"><strong>嘿</strong> 請留下基本資料</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="姓名" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="要吃什麼" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="什麼時候送達" required name="date" value="2017-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="留言" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">取件</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
